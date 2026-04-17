@@ -1,0 +1,9 @@
+{
+  "entry": "example/main.ts",
+  "outDir": "dist-vba",
+  "targetHost": "excel",
+  "moduleSystem": "single",
+  "emitSourceMap": true,
+  "strictNullInterop": true,
+  "vbalib": "external"
+}

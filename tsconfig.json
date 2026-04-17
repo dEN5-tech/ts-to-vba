@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist/vba",
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "tstvbaOptions": {
+    "entry": "example/main.ts",
+    "targetApplication": "Excel",
+    "moduleStyle": "StandardModule",
+    "vbaLibraryPath": "./lib/vbalib.bas",
+    "namespacePrefix": "TS_",
+    "emitSourceMaps": true,
+    "bundle": true,
+    "outputFileName": "MyProject.bas"
+  }
+}
